@@ -52,18 +52,7 @@
     }
 
     .nav-link {
-      color: var(--brand-black) !important;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.5px;
-      padding: 0.5rem 1rem !important;
-    }
-
-    /* The orange active state for Privacy */
-    .nav-link.active {
-      background-color: var(--brand-orange) !important;
-      color: var(--brand-black) !important;
+      color: var(--brand-black);
     }
 
     /* --- MAIN CONTENT STYLES --- */
