@@ -1,396 +1,209 @@
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f3f3f3;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1440px;
-            min-height: 1024px;
-            margin: 0 auto;
-            background-color: white;
-            box-sizing: border-box;
-            border: 2px solid black;
-        }
-
-        
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 5px 50px;
-            border-bottom: 2px solid black;
-            min-height: 70px;
-            box-sizing: border-box;
-        }
-
-        .logo {
-           width: 170px;
-           height: 70px;
-           object-fit: contain;
-           margin-left: -10px;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 0;
-            padding: 0;
-        }
+.home-content {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
 
 
-        nav a {
-            text-decoration: none;
-            color: black;
-            padding: 10px;
-            font-family: 'Figtree';
-            font-size: 16px;
-            min-height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.home-content .main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 50px;
+}
 
-        nav a:hover {
-            text-decoration: underline;
-            background-color: orange;
-        }
+.home-content .main-text {
+    width: 50%;
+}
 
-        button, 
-        .shop-button {
-            background-color: #f0a020;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            font-weight: bold;
-            color: #000000;
-            text-decoration: none;
-            min-height: 44px;
-            font-family:'Figtree';
-            font-size: 20px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
+.home-content .main-text h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 48px;
+    font-weight: 400;
+}
 
-        button:hover, .shop-button:hover {
-            background-color: #e98c20;
-        }
+.home-content .main-text p {
+    font-family: 'Figtree', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+}
 
-        .cart-icon {
-           width: 170px;
-           height: 70px;
-           object-fit: contain;
-        }
+.home-content .shop-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 20px;
+    border: 0;
+    background-color: #f0a020;
+    color: #000;
+    font-family: 'Figtree', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-        .main {
-            display: flex;
-            align-items: center;
-            padding: 40px 50px;
-            gap: 30px;
-        }
+.home-content .shop-button:hover {
+    background-color: #e98c20;
+}
 
-        .main-text {
-            width: 50%;
-        }
+.home-content .mp-image {
+    width: 50%;
+    height: 305px;
+    object-fit: contain;
+    background-color: #eee;
+}
 
-        .main-text h1 {
-            font-family: 'Marcellus';
-            font-weight: 400;
-            font-size: 48px;
-        }
+/* Featured collection */
+.home-content .collection {
+    margin: 20px 50px;
+    padding: 20px;
+    border: 2px solid #000;
+    background-color: #fff;
+}
 
-        .main-text p {
-            line-height: 1.6;
-            font-family: 'Figtree';
-            font-size: 20px;
-        }
+.home-content .collection h2 {
+    margin: 0 0 20px;
+    font-family: 'Marcellus', serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
 
-        .mp-image {
-            width: 50%;
-            height: 305px;
-            object-fit: contain;
-            background-color: #eeeeee;
-        }
-        
-        .collection {
-            border: 2px solid black;
-            margin: 20px 50px;
-            padding: 20px;
-            background-color: white;
-        }
+.home-content .products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+}
 
-        .collection h2 {
-            font-family: 'Marcellus';
-            font-weight: 400;
-            font-size: 32px;
-            text-align: center;
-            margin: 0 0 20px;
-        }
+.home-content .product {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    text-align: left;
+}
 
-        .products {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            gap: 15px;
-            width: 100%;
-        }
+.home-content .product-image {
+    width: 130px;
+    height: 150px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
 
-        .product {
-            flex: 1;
-            min-width: 0;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: left;
-            gap: 10px;
-        }
+.home-content .product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
-        .product-image {
-            width: 130px;
-            height: 150px;
-            object-fit: contain;
-            flex-shrink: 0;
-        }
+.home-content .product h3 {
+    margin: 0 0 8px;
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    font-weight: 400;
+}
 
-        .product-info {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
+.home-content .product p {
+    margin: 0 0 8px;
+    font-family: 'Figtree', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
 
-        .product h3 {
-            font-family: 'Marcellus';
-            font-size: 20px;
-            font-weight: 400;
-            margin: 0 0 8px;
-        }
+.home-content .view-button {
+    display: inline-block;
+    min-height: 44px;
+    padding: 10px 15px;
+    border: 0;
+    background-color: #ffa126;
+    color: #000;
+    font-family: 'Figtree', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
 
-        .product p {
-            font-family: 'Figtree';
-            font-size: 20px;
-            font-weight: bold;
-            margin: 0 0 8px;
-        }
+.home-content .view-button:hover {
+    background-color: #e98c20;
+}
 
-        .view-button {
-            display: inline-block;
-            background-color: #ffa126;
-            border: none;
-            padding: 10px 15px;
-            font-family: 'Figtree';
-            font-size: 16px;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
-            text-align: center;
-            cursor: pointer;
-            min-height: 44px;
-        }
 
-        .view-button:hover {
-            background-color: #e98c20;
-        }
+.home-content .about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 50px;
+}
 
-        .view-button:focus-visible {
-            outline: 3px solid #005fcc;
-            outline-offset: 4px;
-        }
+.home-content .about-text h2 {
+    width: 60%;
+    font-family: 'Marcellus', serif;
+    font-size: 24px;
+    font-weight: 400;
+}
 
-        .about {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            padding: 20px 50px;
-        }
+.home-content .about-text p {
+    width: 90%;
+    font-family: 'Figtree', Arial, sans-serif;
+    font-size: 20px;
+}
 
-        .about-text h2 {
-            font-family: 'Marcellus';
-            font-size: 24px;
-            font-weight: 400;
-            width: 60%;
-        }
+.home-content .team-image {
+    width: 40%;
+    height: 150px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
 
-        .about-text p {
-            font-family: 'Figtree';
-            font-size: 20px;
-            width: 90%;
-        }
 
-        .team-image {
-            width: 40%;
-            height: 150px;
-            background-color: #eeeeee;
-            border: 1px solid #cccccc;
-        }
+.home-content a:focus-visible {
+    outline: 3px solid #005fcc;
+    outline-offset: 4px;
+}
 
-        footer {
-            background-color: #1d2d4b;
-            color: white;
-            min-height: auto;
-            padding: 12px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 12px;
-        }
+@media screen and (max-width: 700px) {
+    .home-content .main {
+        flex-direction: column;
+        padding: 20px;
+    }
 
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
+    .home-content .main-text,
+    .home-content .mp-image {
+        width: 100%;
+    }
 
-        footer a:hover {
-            text-decoration: underline;
-            background-color: transparent;
-        }
+    .home-content .products {
+        flex-direction: column;
+    }
 
-        .footer-text {
-            font-family: 'Figtree';
-            font-size: 16px;
-        }
+    .home-content .product {
+        width: 100%;
+    }
 
-        footer div:last-child {
-        text-align: right;
-        min-width: 250px;
-        }
+    .home-content .collection {
+        margin: 20px;
+    }
 
-        footer div:last-child p:first-child a {
-        margin: 0 8px;
-        }
+    .home-content .about {
+        flex-direction: column;
+        padding: 20px;
+    }
 
-        footer div:last-child p {
-        margin: 10px 0;
-        }
-
-        .footer-links {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 10px;
-        }
-
-        .footer-links a {
-        margin: 0;
-        }
-
-        .contact-separator {
-        margin: 0 12px;
-        }
-
-        .cart {
-            display: none;
-            background-color: white;
-            border: 2px solid black;
-            padding: 20px;
-            margin: 20px 50px;
-        }
-
-        .cart-icon {
-            width: 37px;
-            height: 37px;
-            object-fit: contain;
-        }
-
-       @media screen and (max-width: 700px) {
-
-            .main {
-                flex-direction: column;
-                padding: 20px
-            }
-
-            .main-text,
-            .mp-image {
-                width: 100%
-            }
-
-            .container {
-                width: 100%;
-                min-height: 100vh;
-                margin: 0 auto;
-            }
-
-            .products {
-            flex-direction: column;
-            }
-
-            .product {
-                width: 100%;
-            }
-
-            header {
-                padding: 20px;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 10px;
-            }
-
-            nav {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .main-text, .mp-image {
-                width: 100%;
-            }
-
-            .collection {
-                margin: 20px;
-            }
-
-            .about {
-                flex-direction: column;
-                padding: 20px;
-            }
-
-            .about-text,
-            .about-text h2,
-            .about-text p,
-            .team-image {
-                width: 100%;
-            }
-
-            footer {
-                flex-direction: column;
-                gap: 5px;
-                padding: 12px 20px;
-                flex-direction: column;
-            }
-
-            footer div:last-child {
-                text-align: left;
-                min-width: 0;
-            }
-
-            .footer-links {
-                justify-content: flex-start;
-                flex-wrap: wrap;
-            }
-        }
-
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            min-height: 100%;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        a:focus-visible,
-        button:focus-visible {
-        outline: 3px solid #005fcc;
-        outline-offset: 4px;
-        }
-
-        footer a:focus-visible {
-            outline-color: white;
-        }
+    .home-content .about-text,
+    .home-content .about-text h2,
+    .home-content .about-text p,
+    .home-content .team-image {
+        width: 100%;
+    }
+}
