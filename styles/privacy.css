@@ -1,4 +1,4 @@
- <style>
+
     :root {
       --brand-orange: #FFAA49;
       --brand-dark-blue: #1C2B48;
@@ -104,8 +104,3 @@
         font-size: 2rem;
       }
     }
-
-body {
-    background-color: red !important;
-}
-  </style>
