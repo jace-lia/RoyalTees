@@ -1,132 +1,68 @@
-    :root {
-      --brand-orange: #FFAA49;
-      --brand-dark-blue: #1C2B48;
-      --brand-black: #000000;
-      --brand-off-white: #FAF8F5;
-      --brand-gray: #808080;
-    }
+:root {
+    --terms-black: #000000;
+}
 
-    body {
-      font-family: 'Figtree', sans-serif;
-      background-color: #FFFFFF;
-      color: var(--brand-black);
-    }
 
-    /* Typography Overrides */
-    h1, h2, .navbar-brand {
-      font-family: 'Marcellus', serif;
-    }
+body {
+    background-color: #ffffff;
+    color: var(--terms-black);
+    font-family: 'Figtree', sans-serif;
+}
 
-    .logo {
-        width: 170px;
-        height: 70px;
-        object-fit: contain;
-        margin-left: -10px;
-    }
 
-    .cart-icon {
-        width: 37px;
-        height: 37px;
-        object-fit: contain;
-        max-width: 100%;
-    }
+.site-container {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid var(--terms-black);
+}
 
-    .site-container {
-        width: 100%;
-        max-width: 1440px;
-        min-height: 1024px;
-        margin: 0 auto;
-        background-color: white;
-        box-sizing: border-box;
-        border: 2px solid black;
-    }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 5px 50px;
-        border-bottom: 2px solid black;
-        min-height: 70px;
-        box-sizing: border-box;
-    }
-    /* --- NAVBAR STYLES --- */
-    header nav a {
-        text-decoration: none;
-        color: var(--brand-black);
-        font-family: 'Figtree', sans-serif;
-        font-weight: 600;
-        font-size: 0.85rem;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        padding: 0.5rem 1rem;
-    }
+main .page-title,
+main .policy-box h2 {
+    font-family: 'Marcellus', serif;
+}
 
-    header nav a.active {
-        background-color: var(--brand-orange);
-        color: var(--brand-black);
-    }
 
-    /* --- MAIN CONTENT STYLES --- */
-    .page-title {
-      text-transform: uppercase;
-      font-weight: 900;
-      letter-spacing: 1px;
-      margin-top: 2rem;
-    }
+main .page-title {
+    margin-top: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-    /* 2px Border */
-    .policy-box {
-      border: 2px solid var(--brand-black);
-      padding: 3rem;
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-    }
 
-    /* Titles are bold via the HTML class fw-bold, but we keep sizes here */
-    .policy-box h2 {
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
+main .policy-box {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    border: 2px solid var(--terms-black);
+}
 
-    .policy-box p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: var(--brand-black);
-    }
-    
-    .policy-box h2:first-child {
-        margin-top: 0;
-    }
 
-    /* --- FOOTER STYLES --- */
-    footer {
-      background-color: var(--brand-dark-blue) !important;
-      color: #FFFFFF;
-      padding: 2rem 5%;
-      font-size: 0.9rem;
-    }
+main .policy-box h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
 
-    /* Links stay pure white, no hover effects */
-    footer a {
-      color: #FFFFFF;
-      text-decoration: none;
-    }
 
-    /* Gray color for the pipe separators */
-    .contact-separator {
-      color: var(--brand-gray);
-      margin: 0 0.5rem;
-    }
+main .policy-box p {
+    color: var(--terms-black);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
 
-    /* --- RESPONSIVE ADJUSTMENTS --- */
-    @media (max-width: 768px) {
-      .policy-box {
+
+@media (max-width: 768px) {
+    main .policy-box {
         padding: 1.5rem;
-      }
-      .page-title {
-        font-size: 2rem;
-      }
     }
+
+    main .page-title {
+        font-size: 2rem;
+    }
+}
