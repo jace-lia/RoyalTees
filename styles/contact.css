@@ -168,3 +168,27 @@ body {
 .site-footer a:hover {
     text-decoration: underline;
 }
+
+
+#main-content {
+    padding-bottom: 12px;
+}
+
+
+.contact-gutter {
+    --bs-gutter-x: 12px;
+}
+
+
+.contact-panel-info {
+    padding: 32px;
+}
+
+.contact-panel-message {
+    padding: 28px;
+}
+
+
+.contact-detail-stack {
+    gap: 20px;
+}
