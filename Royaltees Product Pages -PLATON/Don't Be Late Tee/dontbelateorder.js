@@ -1,3 +1,24 @@
+const colorImages = {
+  'Black/White':   'images/dont be late/shirt 1 main image black white.png',
+  'Cherry/Caramel Tan':   'images/dont be late/shirt 1 main image pink.png',
+  'Dark Navy/Yellow': 'images/dont be late/shirt 1 main image dark navy yellow.png',
+  'Eggplant/Dusty Rose':  'images/dont be late/shirt 1 main image eggplant dusty rose.png',
+  'Slate Blue/Gray':  'images/dont be late/shirt 1 main image slate blue gray.png',
+  'White/Black':  'images/dont be late/shirt 1 main image white black.png'
+};
+
+const colorSelect = document.getElementById('TeeColor');
+const mainImage = document.getElementById('main-image');
+
+colorSelect?.addEventListener('change', function () {
+  const color = colorSelect.value;
+  const newSrc = colorImages[color];
+  if (!newSrc) return;
+
+  mainImage.src = newSrc;
+  mainImage.alt = `Everyday Comfort Tee in the color, ${color}`;
+});
+
 document.getElementById('DecreaseQty')?.addEventListener('click', function () {
   const qtyInput = document.getElementById('TeeQuantity');
   let val = parseInt(qtyInput.value, 10);
