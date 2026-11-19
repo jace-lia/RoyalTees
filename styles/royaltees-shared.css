@@ -17,8 +17,6 @@ html {
 
 .rt-header {
     min-height: 61px;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
     background-color: #fff;
     border-bottom: 2px solid #525252;
     font-family: 'Figtree', Arial, sans-serif;
