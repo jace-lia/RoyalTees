@@ -1,106 +1,58 @@
+:root {
+    --privacy-black: #000000;
+}
 
-    :root {
-      --brand-orange: #FFAA49;
-      --brand-dark-blue: #1C2B48;
-      --brand-black: #000000;
-      --brand-off-white: #FAF8F5;
-      --brand-gray: #808080;
-    }
 
-    body {
-      font-family: 'Figtree', sans-serif;
-      background-color: #FFFFFF;
-      color: var(--brand-black);
-    }
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #ffffff;
+    color: var(--privacy-black);
+}
 
-    /* Typography Overrides */
-    h1, h2, .navbar-brand {
-      font-family: 'Marcellus', serif;
-    }
 
-    /* --- NAVBAR STYLES --- */
-    .navbar {
-      background-color: var(--brand-off-white) !important;
-      border-bottom: 2px solid var(--brand-black);
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
+main .page-title {
+    font-family: 'Marcellus', serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+}
 
-    .nav-link {
-      color: var(--brand-black) !important;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 0.5px;
-      padding: 0.5rem 1rem !important;
-    }
 
-    /* The orange active state for Privacy */
-    .nav-link.active {
-      background-color: var(--brand-orange) !important;
-      color: var(--brand-black) !important;
-    }
+main .policy-box {
+    border: 2px solid var(--privacy-black);
+    padding: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
 
-    /* --- MAIN CONTENT STYLES --- */
-    .page-title {
-      text-transform: uppercase;
-      font-weight: 900;
-      letter-spacing: 1px;
-      margin-top: 2rem;
-    }
 
-    /* 2px Border */
-    .policy-box {
-      border: 2px solid var(--brand-black);
-      padding: 3rem;
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-    }
+main .policy-box h2 {
+    font-family: 'Marcellus', serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
-    /* Titles are bold via the HTML class fw-bold, but we keep sizes here */
-    .policy-box h2 {
-      text-transform: uppercase;
-      font-size: 1.8rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
-    }
+main .policy-box h2:first-child {
+    margin-top: 0;
+}
 
-    .policy-box p {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: var(--brand-black);
-    }
-    
-    .policy-box h2:first-child {
-        margin-top: 0;
-    }
 
-    /* --- FOOTER STYLES --- */
-    footer {
-      background-color: var(--brand-dark-blue) !important;
-      color: #FFFFFF;
-      padding: 2rem 0;
-      font-size: 0.9rem;
-    }
+main .policy-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--privacy-black);
+}
 
-    /* Links stay pure white, no hover effects */
-    footer a {
-      color: #FFFFFF;
-      text-decoration: none;
-    }
 
-    /* Gray color for the pipe separators */
-    .separator {
-      color: var(--brand-gray);
-      margin: 0 0.5rem;
-    }
-
-    /* --- RESPONSIVE ADJUSTMENTS --- */
-    @media (max-width: 768px) {
-      .policy-box {
+@media (max-width: 768px) {
+    main .policy-box {
         padding: 1.5rem;
-      }
-      .page-title {
-        font-size: 2rem;
-      }
     }
+
+    main .page-title {
+        font-size: 2rem;
+    }
+}
