@@ -24,6 +24,12 @@
         margin-left: -10px;
     }
 
+    .cart-icon {
+        width: 37px;
+        height: 37px;
+        object-fit: contain;
+    }
+
     .site-container {
         width: 100%;
         max-width: 1440px;
