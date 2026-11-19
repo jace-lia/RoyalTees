@@ -1,0 +1,42 @@
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 50px;
+            border-bottom: 2px solid black;
+            min-height: 70px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+           width: 170px;
+           height: 70px;
+           object-fit: contain;
+           margin-left: -10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-family: 'Figtree';
+            font-size: 16px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            background-color: orange;
+        }
