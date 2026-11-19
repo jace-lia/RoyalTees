@@ -115,7 +115,7 @@
     }
 
     /* Gray color for the pipe separators */
-    .separator {
+    .contact-separator {
       color: var(--brand-gray);
       margin: 0 0.5rem;
     }
