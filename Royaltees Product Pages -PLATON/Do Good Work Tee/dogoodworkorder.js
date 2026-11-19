@@ -1,24 +1,3 @@
-const colorImages = {
-  'Teal':   'images/everyday comfort/shirt 2 main image teal.png',
-  'Pink':   'images/everyday comfort/shirt 2 main image pink.png',
-  'Purple': 'images/everyday comfort/shirt 2 main image purple.png',
-  'Black':  'images/everyday comfort/shirt 2 main image black.png',
-  'Light Blue':  'images/everyday comfort/shirt 2 main image blue.png',
-  'Green':  'images/everyday comfort/shirt 2 main image green.png'
-};
-
-const colorSelect = document.getElementById('TeeColor');
-const mainImage = document.getElementById('main-image');
-
-colorSelect?.addEventListener('change', function () {
-  const color = colorSelect.value;
-  const newSrc = colorImages[color];
-  if (!newSrc) return;
-
-  mainImage.src = newSrc;
-  mainImage.alt = `Everyday Comfort Tee in the color, ${color}`;
-});
-
 document.getElementById('DecreaseQty')?.addEventListener('click', function () {
   const qtyInput = document.getElementById('TeeQuantity');
   let val = parseInt(qtyInput.value, 10);
