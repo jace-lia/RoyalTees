@@ -1,4 +1,4 @@
-:root {
+    :root {
       --brand-orange: #FFAA49;
       --brand-dark-blue: #1C2B48;
       --brand-black: #000000;
@@ -28,6 +28,7 @@
         width: 37px;
         height: 37px;
         object-fit: contain;
+        max-width: 100%;
     }
 
     .site-container {
