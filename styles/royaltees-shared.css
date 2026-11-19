@@ -112,3 +112,66 @@ html {
 .rt-header .rt-cart-link {
     line-height: 0;
 }
+
+/*Mobile Adaptability*/
+
+/* Tablet and phone screens */
+
+@media (max-width: 991px) {
+   
+    .rt-header .rt-container {
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+    .rt-header .rt-nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0 !important;
+    }
+
+
+    .rt-footer .rt-footer-inner {
+        flex-direction: column;
+    }
+
+
+    .rt-footer .rt-footer-inner > div:last-child {
+        margin-left: 0 !important;
+        max-width: 100%;
+    }
+
+ 
+    .rt-footer nav {
+        flex-wrap: wrap !important;
+    }
+
+    .rt-footer p {
+        white-space: normal !important;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* Small phone screens */
+
+@media (max-width: 575px) {
+    .container.rt-container {
+        width: calc(100% - 32px);
+    }
+
+    .rt-header .rt-logo {
+        width: 160px;
+    }
+
+    .rt-header .rt-nav-list {
+        gap: 8px !important;
+    }
+
+    .rt-header .rt-nav-link {
+        font-size: 13px;
+    }
+
+    .rt-footer .rt-footer-inner {
+        font-size: 12px;
+    }
+}
