@@ -1,10 +1,10 @@
 const colorImages = {
-  'Teal':   'assets/shirt 2 main image teal.png',
-  'Pink':   'assets/shirt 2 main image pink.png',
-  'Purple': 'assets/shirt 2 main image purple.png',
-  'Black':  'assets/shirt 2 main image black.png',
-  'Light Blue':  'assets/shirt 2 main image blue.png',
-  'Green':  'assets/shirt 2 main image green.png'
+  'Teal':   'assets/shirt2mainimageteal.png',
+  'Pink':   'assets/shirt2mainimagepink.png',
+  'Purple': 'assets/shirt2mainimagepurple.png',
+  'Black':  'assets/shirt2mainimageblack.png',
+  'Light Blue':  'assets/shirt2mainimageblue.png',
+  'Green':  'assets/shirt2mainimagegreen.png'
 };
 
 const colorSelect = document.getElementById('TeeColor');
