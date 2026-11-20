@@ -91,3 +91,18 @@ textarea:focus-visible {
     outline: 3px solid #005fcc !important;
     outline-offset: 4px;
 }
+
+
+/* Keyboard focus for size choices */
+.btn-check:focus-visible + .size-btn {
+    outline: 3px solid #005fcc !important;
+    outline-offset: 3px;
+}
+
+/* Keep selected size visually distinguishable */
+.btn-check:checked + .size-btn {
+    background-color: #212529;
+    color: #fff;
+    border-color: #212529;
+}
+
