@@ -1,10 +1,10 @@
 const colorImages = {
-  'Teal':   'images/everyday comfort/shirt 2 main image teal.png',
-  'Pink':   'images/everyday comfort/shirt 2 main image pink.png',
-  'Purple': 'images/everyday comfort/shirt 2 main image purple.png',
-  'Black':  'images/everyday comfort/shirt 2 main image black.png',
-  'Light Blue':  'images/everyday comfort/shirt 2 main image blue.png',
-  'Green':  'images/everyday comfort/shirt 2 main image green.png'
+  'Teal':   'assets/shirt 2 main image teal.png',
+  'Pink':   'assets/shirt 2 main image pink.png',
+  'Purple': 'assets/shirt 2 main image purple.png',
+  'Black':  'assets/shirt 2 main image black.png',
+  'Light Blue':  'assets/shirt 2 main image blue.png',
+  'Green':  'assets/shirt 2 main image green.png'
 };
 
 const colorSelect = document.getElementById('TeeColor');
