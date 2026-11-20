@@ -105,18 +105,6 @@ body {
     text-decoration: underline;
 }
 
-.send-button {
-    min-width: 100px;
-    min-height: 15px;
-    background-color: var(--royal-orange);
-    color: #080808;
-    font-size: 20px;
-    transform: translateY(15px);
-}
-
-.send-button:hover {
-    background: #ee982b;
-    color: #080808;
 
 .contact-form .form-label {
     font-size: 20px;
@@ -136,6 +124,21 @@ body {
     outline: 2px solid #df952f;
     outline-offset: 0px;
     box-shadow: none;
+}
+
+.send-button {
+    min-width: 100px;
+    min-height: 15px;
+    background-color: var(--royal-orange);
+    color: #080808;
+    font-size: 20px;
+    transform: translateY(15px);
+}
+
+.send-button:hover,
+.send-button:focus-visible {
+    background-color: #ee982b;
+    color: #080808;
 }
 
 .form-status {
