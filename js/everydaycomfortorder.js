@@ -48,5 +48,6 @@ document.getElementById('OrderOptions')?.addEventListener('submit', function (ev
     `- Product: ${teeName}\n- Price: ${teePrice}\n- Color: ${color}\n- Size: ${size}\n- Quantity: ${quantity}\n\n` +
     `Please process my order. Thank you!`
   );
-window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}`;
+window.open(gmailUrl, '_blank');
 });
