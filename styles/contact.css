@@ -126,15 +126,6 @@ body {
     box-shadow: none;
 }
 
-.send-button {
-    min-width: 100px;
-    min-height: 15px;
-    background-color: var(--royal-orange);
-    color: #080808;
-    font-size: 20px;
-    transform: translateY(15px);
-}
-
 .form-status {
     font-size: 20px;
 }
