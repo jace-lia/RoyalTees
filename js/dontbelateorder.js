@@ -1,10 +1,10 @@
 const colorImages = {
-  'Black/White':   'images/dont be late/shirt 1 main image black white.png',
-  'Cherry/Caramel Tan':   'images/dont be late/shirt 1 main image pink.png',
-  'Dark Navy/Yellow': 'images/dont be late/shirt 1 main image dark navy yellow.png',
-  'Eggplant/Dusty Rose':  'images/dont be late/shirt 1 main image eggplant dusty rose.png',
-  'Slate Blue/Gray':  'images/dont be late/shirt 1 main image slate blue gray.png',
-  'White/Black':  'images/dont be late/shirt 1 main image white black.png'
+  'Black/White':   'assets/shirt 1 main image black white.png',
+  'Cherry/Caramel Tan':   'assets/shirt 1 main image pink.png',
+  'Dark Navy/Yellow': 'assets/shirt 1 main image dark navy yellow.png',
+  'Eggplant/Dusty Rose':  'assets/shirt 1 main image eggplant dusty rose.png',
+  'Slate Blue/Gray':  'assets/shirt 1 main image slate blue gray.png',
+  'White/Black':  'assets/shirt 1 main image white black.png'
 };
 
 const colorSelect = document.getElementById('TeeColor');
