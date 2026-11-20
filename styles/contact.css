@@ -192,3 +192,9 @@ body {
 .contact-detail-stack {
     gap: 20px;
 }
+
+.send-button:focus-visible {
+    outline: 3px solid #df952f !important;
+    outline-offset: 4px;
+    box-shadow: none !important;
+}
