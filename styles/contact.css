@@ -1,3 +1,5 @@
+why is the orange background of send message button vanishing when the focus indicator is there?
+
 :root {
     --royal-ink: #000000;
     --royal-orange: #FFAA49;
@@ -191,21 +193,8 @@ body {
     gap: 20px;
 }
 
-.send-button,
-.send-button:focus,
-.send-button:focus-visible,
-.send-button:active {
-    background-color: var(--royal-orange) !important;
-    color: #080808 !important;
-    box-shadow: none !important;
-}
-
 .send-button:focus-visible {
     outline: 3px solid #005fcc !important;
     outline-offset: 4px !important;
-}
-
-.send-button:hover {
-    background-color: #ee982b !important;
-    color: #080808 !important;
+    box-shadow: none !important;
 }
