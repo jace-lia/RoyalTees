@@ -14,5 +14,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   const subject = encodeURIComponent(`Inquiry from ${name}`);
   const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
 
-  window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${subject}&body=${body}`;
+  window.open(gmailUrl, '_blank');
 });
