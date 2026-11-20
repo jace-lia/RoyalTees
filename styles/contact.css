@@ -135,8 +135,7 @@ body {
     transform: translateY(15px);
 }
 
-.send-button:hover,
-.send-button:focus-visible {
+.send-button:hover {
     background-color: #ee982b;
     color: #080808;
 }
