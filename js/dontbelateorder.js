@@ -1,10 +1,10 @@
 const colorImages = {
-  'Black/White':   'assets/shirt 1 main image black white.png',
-  'Cherry/Caramel Tan':   'assets/shirt 1 main image pink.png',
-  'Dark Navy/Yellow': 'assets/shirt 1 main image dark navy yellow.png',
-  'Eggplant/Dusty Rose':  'assets/shirt 1 main image eggplant dusty rose.png',
-  'Slate Blue/Gray':  'assets/shirt 1 main image slate blue gray.png',
-  'White/Black':  'assets/shirt 1 main image white black.png'
+  'Black/White':   'assets/shirt1mainimageblackwhite.png',
+  'Cherry/Caramel Tan':   'assets/shirt1mainimagecherrytan.png',
+  'Dark Navy/Yellow': 'assets/shirt1mainimagedarknavyyellow.png',
+  'Eggplant/Dusty Rose':  'assets/shirt1mainimageeggplantdustyrose.png',
+  'Slate Blue/Gray':  'assets/shirt1mainimageslatebluegray.png',
+  'White/Black':  'assets/shirt1mainimagewhiteblack.png'
 };
 
 const colorSelect = document.getElementById('TeeColor');
