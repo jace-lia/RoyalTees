@@ -59,50 +59,41 @@
     }
 
     
-/* KEYBOARD ACCESSIBILITY */
+    /* KEYBOARD ACCESSIBILITY */
 
-/* Visible focus indicator for links, buttons, and form controls */
-a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible {
+    /* Visible focus indicator for links, buttons, and form controls */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
     outline: 3px solid #005fcc !important;
     outline-offset: 3px;
-}
+    }
 
-/* Size button design */
-.size-btn {
-    display: inline-block;
-    min-width: 40px;
-    min-height: 40px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-/* Visible focus indicator for all size choices */
-.size-btn:focus-visible {
+    /* Visible focus indicator for size choices */
+    .btn-check:focus-visible + .size-btn {
     outline: 3px solid #005fcc !important;
     outline-offset: 3px;
-}
+    }
 
-/* Visible focus indicator for Order Now */
-.btn-order:focus-visible {
+    /* Visible focus indicator for Order Now */
+    .btn-order:focus-visible {
     outline: 3px solid #005fcc !important;
     outline-offset: 4px;
-}
+    }
 
 
-/* Keyboard focus for size choices */
-.btn-check:focus-visible + .size-btn {
-    outline: 3px solid #005fcc !important;
-    outline-offset: 3px;
-}
+    .size-btn {
+        display: inline-block;
+        min-width: 40px;
+        min-height: 40px;
+        font-weight: 600;
+        cursor: pointer;
+    }
 
-/* Keep selected size visually distinguishable */
-.btn-check:checked + .size-btn {
-    background-color: #212529;
-    color: #fff;
-    border-color: #212529;
-}
-
+    .size-btn:focus,
+    .size-btn:focus-visible {
+        outline: 3px solid #005fcc !important;
+        outline-offset: 3px;
+    }
