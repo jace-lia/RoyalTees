@@ -1,4 +1,3 @@
-  <style>
     body { font-family: 'Figtree', sans-serif; color: #111; }
     h1, h2, .brand-font { font-family: 'Marcellus', serif; }
 
@@ -59,4 +58,41 @@
       font-size: 20px;
     }
 
-  </style>
+  /* KEYBOARD ACCESSIBILITY */
+
+    /* Visible focus indicator for links, buttons, and form controls */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+    outline: 3px solid #005fcc !important;
+    outline-offset: 3px;
+    }
+
+    /* Visible focus indicator for size choices */
+    .btn-check:focus-visible + .size-btn {
+    outline: 3px solid #005fcc !important;
+    outline-offset: 3px;
+    }
+
+    /* Visible focus indicator for Order Now */
+    .btn-order:focus-visible {
+    outline: 3px solid #005fcc !important;
+    outline-offset: 4px;
+    }
+
+
+    .size-btn {
+        display: inline-block;
+        min-width: 40px;
+        min-height: 40px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .size-btn:focus,
+    .size-btn:focus-visible {
+        outline: 3px solid #005fcc !important;
+        outline-offset: 3px;
+    }
