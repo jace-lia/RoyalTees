@@ -58,7 +58,6 @@
       font-size: 20px;
     }
 
-
     /* KEYBOARD ACCESSIBILITY */
 
     /* Visible focus indicator for links, buttons, and form controls */
@@ -97,4 +96,3 @@
         outline: 3px solid #005fcc !important;
         outline-offset: 3px;
     }
-
