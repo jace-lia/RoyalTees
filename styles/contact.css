@@ -105,6 +105,18 @@ body {
     text-decoration: underline;
 }
 
+.send-button {
+    min-width: 100px;
+    min-height: 15px;
+    background-color: var(--royal-orange);
+    color: #080808;
+    font-size: 20px;
+    transform: translateY(15px);
+}
+
+.send-button:hover {
+    background: #ee982b;
+    color: #080808;
 
 .contact-form .form-label {
     font-size: 20px;
@@ -176,32 +188,4 @@ body {
 
 .contact-detail-stack {
     gap: 20px;
-}
-
-.send-button,
-.send-button:visited {
-    background: #FFAA49 !important;
-    color: #080808 !important;
-    border: 1px solid #FFAA49 !important;
-}
-
-.send-button:hover {
-    background: #ee982b !important;
-    color: #080808 !important;
-    border-color: #ee982b !important;
-}
-
-.send-button:focus-visible {
-    background: #FFAA49 !important;
-    color: #080808 !important;
-    border-color: #FFAA49 !important;
-    outline: 3px solid #005fcc !important;
-    outline-offset: 4px !important;
-    box-shadow: none !important;
-}
-
-.send-button:active {
-    background: #ee982b !important;
-    color: #080808 !important;
-    border-color: #ee982b !important;
 }
