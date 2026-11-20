@@ -52,6 +52,7 @@ main .policy-box h2 {
 
 main .policy-box p {
     color: var(--terms-black);
+    font-family:'Figtree';
     font-size: 1.05rem;
     line-height: 1.7;
 }
