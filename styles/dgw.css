@@ -82,3 +82,19 @@
     outline: 3px solid #005fcc !important;
     outline-offset: 4px;
     }
+
+
+    .size-btn {
+        display: inline-block;
+        min-width: 40px;
+        min-height: 40px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .size-btn:focus,
+    .size-btn:focus-visible {
+        outline: 3px solid #005fcc !important;
+        outline-offset: 3px;
+    }
+
