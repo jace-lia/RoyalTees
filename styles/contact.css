@@ -195,6 +195,8 @@ body {
 /* KEYBOARD ACCESSIBILITY - SEND MESSAGE BUTTON */
 
 .send-button:focus-visible {
+    background-color: #FFAA49 !important;
+    color: #080808 !important;
     outline: 3px solid #005fcc !important;
     outline-offset: 4px !important;
     box-shadow: none !important;
